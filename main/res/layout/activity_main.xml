@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.vandit.generalstore.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:text="Product List"/>
+     <!--       <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgLogout"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:tint="#ffffff"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_vpn_key"/>
+        --></LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="0.70">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/listProduct"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnProduct"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            android:text="Product"/><!--
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnReport"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:textColor="#ffffff"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            android:text="Report"/>-->
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelItemName"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="ItemName"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelItemQuantity"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="ItemQuantity"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelItemPrice"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="Price"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelItemSell"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="Rs100"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.vandit.generalstore.ProductItemActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgBack"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:tint="#ffffff"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:text="Product Item List"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelItemName"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelItemQuantity"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:text="Quantity"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelItemPrice"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:text="Buy"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/labelItemSell"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:text="Sell"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="0.70">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/listItem"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnAdditem"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:textColor="#ffffff"
+            android:layout_weight="0.50"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="Add Item"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnReport"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:textColor="#ffffff"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            android:text="Report"/>
+    </LinearLayout>
+</LinearLayout>
+
+<!--
+<android.support.v7.widget.Toolbar
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/colorPrimary">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:tint="#ffffff"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:text="Product Item List"/>
+</LinearLayout>
+
+</android.support.v7.widget.Toolbar>-->
